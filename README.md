@@ -20,7 +20,7 @@ FEATURES
 ---
 
 - add and remove books
--  add and remove member
+- add and remove member
 - update availability status of the book
 - track which books are checked out and when is due to be returned
 - display a list of all books
