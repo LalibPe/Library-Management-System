@@ -4,8 +4,9 @@ Library management system
 
 
 Description
-
+---
 The Library Management System is a software application designed to help libraries efficiently manage their book collections, memberships, and transactions. It allows librarians to easily keep track of books, manage member accounts, and handle book lending, returns, and overdue notifications.
+
 Table of contents
 ---
 
