@@ -19,35 +19,31 @@ Table of contents
 FEATURES
 ---
 
-- add and remove books
-- add and remove member
-- update availability status of the book
-- track which books are checked out and when is due to be returned
-- display a list of all books
-- check fines
+Book Management: Add, update, or delete books from the collection.
+Member Management: Manage library members’ details and membership statuses.
+Lending System: Track borrowed and returned books with automated due dates.
+Overdue Notifications: Notify members of overdue books.
+Search Functionality: Search for books by title, author, or category.
+Reporting: Generate reports on inventory and borrowing history.
 
 MODULES
 ---
 
-Book
+PROJECT GOALS
 
-DailyLog
-
-Store
-
-Member
-
-RentalInfo
+Improve Library Efficiency: Reduce manual tasks and errors by automating book management and lending processes.
+Enhance User Experience: Provide an intuitive interface for library staff and members.
+Data Accuracy: Maintain accurate records of book availability, member details, and borrowing transactions.
 
 
-Technologies used 
+Programming Language
 ---
-C#,JavaScript,Python,JSON
+C#
 
 Installation
 ---
 
-
+License
 
 
 
