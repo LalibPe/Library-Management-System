@@ -1,51 +1,147 @@
-Library management system
+# Library Management System
+
+## Overview
+
+The Library Management System is a console-based application written in C#. It provides core functionalities to manage books, members, and rentals in a library. The system does not use a database; instead, data is stored in JSON files for simplicity. This project is designed to be modular and easy to expand.
+
 ---
 
+## Features
 
+1. **Book Management**
 
-Description
----
-The Library Management System is a software application designed to help libraries efficiently manage their book collections, memberships, and transactions. It allows librarians to easily keep track of books, manage member accounts, and handle book lending, returns, and overdue notifications.
+   - Add, view, and remove books.
+   - Track book availability (borrowed or available).
 
-Table of contents
----
+2. **Member Management**
 
-- Project's goals
-- Features
-- Technologies used
-- Installation
+   - Add, view, and remove members.
+   - Track member details such as ID and name.
 
+3. **Rental Management**
 
-FEATURES
----
+   - Borrow books (linking a book to a member).
+   - Return books and update their availability.
+   - Track rental history.
 
-Book Management: Add, update, or delete books from the collection.
-Member Management: Manage library members’ details and membership statuses.
-Lending System: Track borrowed and returned books with automated due dates.
-Overdue Notifications: Notify members of overdue books.
-Search Functionality: Search for books by title, author, or category.
-Reporting: Generate reports on inventory and borrowing history.
+4. **Data Persistence**
 
-MODULES
+   - All data (books, members, rentals) is stored in JSON files.
+   - Separate save and load functionality for books, members, and rentals.
+
 ---
 
-PROJECT GOALS
+## Structure
+
+The application consists of the following key components:
+
+### Classes
+
+1. **Book**
+
+   - Properties: `SerialNum`, `Title`, `Author`, `IsAvailable`
+   - Methods: `ToString()` for detailed book representation.
+
+2. **Member**
+
+   - Properties: `Id`, `Name`
+   - Methods: `ToString()` for detailed member representation.
+
+3. **Rental**
+
+   - Properties: `Book`, `Member`
+   - Methods: `ToString()` for rental information.
+
+4. **Library**
+
+   - Manages collections of books, members, and rentals.
+   - Implements save and load functionality for each entity.
+
+### JSON Data Files
+
+- `books.json` for storing book data.
+- `members.json` for storing member data.
+- `rentals.json` for storing rental data.
+
 ---
 
-Improve Library Efficiency: Reduce manual tasks and errors by automating book management and lending processes.
-Enhance User Experience: Provide an intuitive interface for library staff and members.
-Data Accuracy: Maintain accurate records of book availability, member details, and borrowing transactions.
+## How to Use
 
+1. **Run the Program**
 
-Programming Language
+   - Compile and execute the `Program.cs` file.
+
+2. **Available Commands**
+
+   - Add books, members, or rentals.
+   - View all books, members, or current rentals.
+   - Return books and update their status.
+
+3. **Data Persistence**
+
+   - The program automatically saves data to JSON files when modifications are made.
+   - Data is loaded from the JSON files upon startup.
+
 ---
-C#
 
-Installation
+## Example Usage
+
+### Adding a Book:
+
+```plaintext
+Enter the serial number: 123
+Enter the title: Kiki Krosan
+Enter the author: Kiki Miki
+Book added successfully.
+```
+
+### Borrowing a Book:
+
+```plaintext
+Enter Member ID: 1
+Enter Book Serial Number: 123
+Book successfully borrowed by Member 1.
+```
+
 ---
 
-License
+## Requirements
+
+- .NET SDK (latest version)
+- Visual Studio or any compatible C# editor
+
 ---
 
+## Installation
 
+1. Clone the repository:
 
+   ```bash
+   git clone <repository_url>
+   ```
+
+2. Open the solution in Visual Studio.
+
+3. Build the solution to restore dependencies.
+
+4. Run the application from `Program.cs`.
+
+---
+
+## Future Enhancements
+
+- Implement overdue book tracking.
+- Add penalties for late returns.
+- Enhance the user interface with a graphical UI.
+- Integrate a database for larger-scale use.
+
+---
+
+## Contributors
+
+- Pehilj Bilal
+
+---
+
+##
+  
